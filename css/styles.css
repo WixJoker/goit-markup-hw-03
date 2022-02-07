@@ -19,6 +19,26 @@ body {
   background-color: var(--primary-background-color);
   color: #757575;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1600px;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 /* Header */
 .header-logo-text {
   font-family: var(--logo-font-family);
@@ -49,12 +69,24 @@ a:focus {
 .header-contacts {
   color: inherit;
 }
+.section.centered {
+  text-align: center;
+}
+section {
+  margin-bottom: 94px;
+}
 /* Hero section */
 .hero,
 footer {
   background-color: var(--secondary-background-color);
 }
+.hero {
+  margin-bottom: 94px;
+}
 .hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -64,6 +96,11 @@ footer {
   color: var(--primary-background-color);
 }
 .hero-button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1 px solid transparent;
+
   cursor: pointer;
   font-family: inherit
   font-weight: 700;
@@ -82,6 +119,10 @@ footer {
 }
 /* Section properties */
 .properties-title {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -98,6 +139,10 @@ footer {
 }
 /* Activities section */
 .section-title {
+  display: inline-block;
+  margin-top: 0 px;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -105,8 +150,11 @@ footer {
   letter-spacing: inherit;
   color: var(--title-color);
 }
-.section.our-team {
+section.our-team {
   background: var(--section-background-color);
+  margin-bottom: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .image-description {
   background-color: var(--primary-background-color);
@@ -125,10 +173,6 @@ footer {
 .our-team-text {
   font-weight: 400;
   color: inherit;
-}
-.properties p {
-  width: 270px;
-  height: 75px;
 }
 /* Section portfolio */
 .portfolio-button {
@@ -165,7 +209,15 @@ footer {
   color: inherit;
 }
 /* Footer */
+footer {
+  margin-top; 0 px;
+  margin-bottom: 0 px;
+}
 .footer-logo-text {
+ display: inline-block;
+ margin-top: 60px;
+ margin-bottom: 20px;
+
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -180,6 +232,11 @@ footer {
   line-height: 1.71;
   letter-spacing: inherit;
   color: var(--primary-background-color);
+}
+.footer-info {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 60px;
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
