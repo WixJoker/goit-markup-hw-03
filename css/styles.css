@@ -41,6 +41,9 @@ p {
 }
 /* Header */
 .header-logo-text {
+  margin-right: 93px;
+  margin-left: 215px;
+
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -50,6 +53,25 @@ p {
 }
 .web-word {
   color: var(--accent-color);
+}
+.header {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.header-links-list {
+  display: flex;
+}
+.header-links-list li {
+  margin-right: 50px;
+}
+.header-links-list li:first-child {
+  margin-left: 0px;
+}
+.header-links-list li .contacts {
+  margin-right: 331px;
 }
 .site-nav .header-link.current {
   color: var(--accent-color);
@@ -72,7 +94,7 @@ a:focus {
 .section.centered {
   text-align: center;
 }
-section {
+.section {
   margin-bottom: 94px;
 }
 /* Hero section */
@@ -82,10 +104,13 @@ footer {
 }
 .hero {
   margin-bottom: 94px;
+  height: 594px;
 }
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
+  padding-top: 200px;
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
