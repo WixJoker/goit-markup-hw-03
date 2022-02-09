@@ -30,20 +30,21 @@ html {
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1600px;
+  width: 1200px;
 }
 h1,
 h2,
 h3,
-p {
+h4,
+h5,
+h6,
+p,
+ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 /* Header */
 .header-logo-text {
-  margin-right: 93px;
-  margin-left: 215px;
-
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -56,6 +57,7 @@ p {
 }
 .header {
   display: flex;
+  justify-content: center;
 }
 .site-nav {
   display: flex;
@@ -63,15 +65,13 @@ p {
 }
 .header-links-list {
   display: flex;
+  align-items: center;
 }
 .header-links-list li {
   margin-right: 50px;
 }
 .header-links-list li:first-child {
   margin-left: 0px;
-}
-.header-links-list li .contacts {
-  margin-right: 331px;
 }
 .site-nav .header-link.current {
   color: var(--accent-color);
@@ -95,21 +95,16 @@ a:focus {
   text-align: center;
 }
 .section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 /* Hero section */
 .hero,
 footer {
   background-color: var(--secondary-background-color);
 }
-.hero {
-  margin-bottom: 94px;
-  height: 594px;
-}
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  padding-top: 200px;
   width: 696px;
 
   font-weight: 900;
@@ -121,10 +116,12 @@ footer {
   color: var(--primary-background-color);
 }
 .hero-button {
+  display: inline-block;
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
   border: 1 px solid transparent;
+  justify-content: center;
 
   cursor: pointer;
   font-family: inherit
@@ -163,6 +160,13 @@ footer {
   color: inherit;
 }
 /* Activities section */
+.activities-images {
+  display: flex;
+}
+.activities-images-item {
+  margin-right: 50px;
+  justify-content: space-between;
+}
 .section-title {
   display: inline-block;
   margin-top: 0 px;
@@ -180,6 +184,14 @@ section.our-team {
   margin-bottom: 0px;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.our-team-item {
+  display: flex;
+}
+.our-team-image,
+.image-description {
+  margin-right: 30px;
+  margin-left: 0px;
 }
 .image-description {
   background-color: var(--primary-background-color);
@@ -200,6 +212,27 @@ section.our-team {
   color: inherit;
 }
 /* Section portfolio */
+.portfolio-button-list {
+  display: flex;
+  justify-content: center;
+}
+.flex-container {
+  margin-top: auto;
+  margin-left: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 1170px;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-item {
+  margin-right: 30px;
+}
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
 .portfolio-button {
   cursor: pointer;
   background-color: var(--button-background-color);
