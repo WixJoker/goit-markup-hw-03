@@ -12,20 +12,20 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="container header section">
+    <header class="container header">
         <!-- Меню -->
-        <nav class="site-nav">  
-            <a class="header-logo-text" href="#"><span class="web-word">Web</span>Studio</a>
+            <nav class="site-nav">  
+                <a class="header-logo-text" href="#"><span class="web-word">Web</span>Studio</a>
+                <ul class="header-links-list">
+                    <li><a class="header-link current" href="./index.html">Студия</a></li>
+                    <li><a class="header-link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="header-link contacts" href="#">Контакты</a></li>
+                </ul>
+            </nav>
             <ul class="header-links-list">
-                <li><a class="header-link current" href="./index.html">Студия</a></li>
-                <li><a class="header-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="header-link contacts" href="#">Контакты</a></li>
+                <li><a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="header-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="header-links-list">
-            <li><a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
-        </ul>
     </header>
     <main>
         <!-- ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА -->
@@ -35,7 +35,7 @@
         </section>
         <!-- КАЧЕСТВА -->
         <section class="section centered">
-            <h2 style="display: none;">Качества</h2>
+            <h2 class="visually-hidden">Качества</h2>
             <ul class="properties">
                 <li>
                     <h3 class="properties-title">Внимание к деталям</h3>

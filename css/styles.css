@@ -42,6 +42,7 @@ p,
 ul {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 0px;
 }
 /* Header */
 .header-logo-text {
@@ -51,6 +52,7 @@ ul {
   line-height: 1.19;
   letter-spacing: inherit;
   color: var(--logo-color);
+  margin-right: 93px;
 }
 .web-word {
   color: var(--accent-color);
@@ -58,10 +60,13 @@ ul {
 .header {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 94px;
 }
 .site-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .header-links-list {
   display: flex;
@@ -69,9 +74,6 @@ ul {
 }
 .header-links-list li {
   margin-right: 50px;
-}
-.header-links-list li:first-child {
-  margin-left: 0px;
 }
 .site-nav .header-link.current {
   color: var(--accent-color);
@@ -140,6 +142,21 @@ footer {
   background-color: var(--secondary-accent-color);
 }
 /* Section properties */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.properties {
+  display: flex;
+}
 .properties-title {
   display: inline-block;
   margin-top: 0px;
@@ -215,6 +232,10 @@ section.our-team {
 .portfolio-button-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 34px;
+}
+.portfolio li:first-child {
+  margin-left: 0px;
 }
 .flex-container {
   margin-top: auto;
@@ -229,11 +250,14 @@ section.our-team {
 }
 .portfolio-item {
   margin-right: 30px;
+  padding-left: 0px;
 }
-.portfolio-item:nth-child(3n) {
+.portfolio-item:nth-child(3n+3) {
   margin-right: 0px;
 }
 .portfolio-button {
+  display: block;
+  margin-right: 8 px;
   cursor: pointer;
   background-color: var(--button-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -268,13 +292,13 @@ section.our-team {
 }
 /* Footer */
 footer {
-  margin-top; 0 px;
+  margin-top: 0 px;
   margin-bottom: 0 px;
+  align-content: flex-start;
 }
 .footer-logo-text {
- display: inline-block;
- margin-top: 60px;
- margin-bottom: 20px;
+  display: inline-block;
+  padding-top: 60px;
 
   font-family: var(--logo-font-family);
   font-weight: 700;
@@ -292,9 +316,8 @@ footer {
   color: var(--primary-background-color);
 }
 .footer-info {
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  padding-bottom: 60px;
 }
 .footer-contacts {
   color: rgba(255, 255, 255, 0.6);
