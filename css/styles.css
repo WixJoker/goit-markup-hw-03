@@ -107,6 +107,7 @@ a:focus {
   text-align: center;
 }
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 /* Hero section */
@@ -169,7 +170,6 @@ footer {
 }
 .properties {
   display: flex;
-  padding-top: 94px;
 }
 .properties li {
   width: 270px;
@@ -183,7 +183,7 @@ li .properties-content {
   justify-content: flex-start;
 }
 .properties-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -219,12 +219,9 @@ li .properties-content {
 }
 section.our-team {
   background: var(--section-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .our-team-item {
   display: flex;
-  padding-top: 30px;
 }
 .our-team-image:last-child,
 .image-description:last-child {
@@ -236,6 +233,8 @@ section.our-team {
 }
 .image-description {
   background-color: var(--primary-background-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .our-team-title,
 .our-team-text {
@@ -254,10 +253,6 @@ section.our-team {
   color: inherit;
 }
 /* Section portfolio */
-.section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .portfolio-button-list {
   display: flex;
   justify-content: center;
@@ -285,8 +280,8 @@ section.our-team {
 .portfolio-button {
   cursor: pointer;
   background-color: var(--button-background-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
