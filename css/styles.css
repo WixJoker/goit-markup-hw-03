@@ -278,6 +278,8 @@ section.our-team {
   margin-bottom: 0;
 }
 .portfolio-button {
+  padding: 6px 22px;
+
   cursor: pointer;
   background-color: var(--button-background-color);
   border-radius: 4px;
