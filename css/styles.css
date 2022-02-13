@@ -103,9 +103,6 @@ a:focus {
 .header-contacts {
   color: inherit;
 }
-.section.centered {
-  text-align: center;
-}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -115,6 +112,7 @@ a:focus {
   background-color: var(--secondary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 footer {
   background-color: var(--secondary-background-color);
